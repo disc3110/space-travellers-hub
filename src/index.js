@@ -6,6 +6,9 @@ import Header from './components/header';
 import Misssions from './pages/Missions';
 import Profile from './pages/Profile';
 import Rockets from './pages/Rockets';
+import getRockets from './API/rockets';
+
+getRockets();
 
 ReactDOM.render(
   <React.StrictMode>
