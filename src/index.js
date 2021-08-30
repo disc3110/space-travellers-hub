@@ -1,15 +1,25 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
+import './style/index.css';
 import { Route, BrowserRouter, Switch } from 'react-router-dom';
 import Header from './components/header';
+import Misssions from './pages/Missions';
+import Profile from './pages/Profile';
+import Rockets from './pages/Rockets';
 
 ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter>
+      <Header />
       <Switch>
+        <Route path="/missions">
+          <Misssions />
+        </Route>
+        <Route path="/profile">
+          <Profile />
+        </Route>
         <Route exact path="/">
-          <Header />
+          <Rockets />
         </Route>
       </Switch>
     </BrowserRouter>
