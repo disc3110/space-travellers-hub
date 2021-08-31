@@ -24,24 +24,26 @@ const Missions = () => {
           <th scope="row">{mission.mission_name}</th>
           <td>{mission.description}</td>
           <td>Member</td>
-          <td><button type="button" className="btn btn-light">Light</button></td>
+          <td><button type="button" className="btn btn-light">Join</button></td>
         </tr>
       ))}
     </tbody>
   );
 
   return (
-    <table className="table table-striped table-hover">
-      <thead>
-        <tr>
-          <th scope="col">Mission</th>
-          <th scope="col">Description</th>
-          <th scope="col">Status</th>
-          <th scope="col">Button</th>
-        </tr>
-      </thead>
-      <MissionDisplay />
-    </table>
+    <div className="p-5">
+      <table className="table table-striped table-hover border border-solid">
+        <thead>
+          <tr>
+            <th scope="col">Mission</th>
+            <th scope="col">Description</th>
+            <th scope="col">Status</th>
+            <th scope="col"> </th>
+          </tr>
+        </thead>
+        <MissionDisplay />
+      </table>
+    </div>
   );
 };
 
