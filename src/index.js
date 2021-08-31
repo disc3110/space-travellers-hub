@@ -1,8 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { Provider } from 'react-redux';
 import './style/index.css';
 import { Route, BrowserRouter, Switch } from 'react-router-dom';
-import { Provider } from 'react-redux';
 import Header from './components/header';
 import Misssions from './pages/Missions';
 import Profile from './pages/Profile';
