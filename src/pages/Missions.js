@@ -4,14 +4,15 @@ import { successMission, joinMission } from '../redux/missions/missions';
 
 const Missions = () => {
   const dispatch = useDispatch();
+  
   useEffect(() => {
-    const fetchMissions = async () => {
-      const url = 'https://api.spacexdata.com/v3/missions';
-      const missionsFecth = await fetch(url);
-      const missionsData = await missionsFecth.json();
-      return dispatch(successMission(missionsData));
-    };
-    fetchMissions();
+      const fetchMissions = async () => {
+        const url = 'https://api.spacexdata.com/v3/missions';
+        const missionsFecth = await fetch(url);
+        const missionsData = await missionsFecth.json();
+        return dispatch(successMission(missionsData));
+      };
+      fetchMissions();
   }, []);
 
   const myMissions = useSelector((state) => state.missions);
@@ -27,7 +28,7 @@ const Missions = () => {
           <th scope="row">{mission.mission_name}</th>
           <td>{mission.description}</td>
           <td>{(mission.member ? 'Actve Member' : 'NOT A MEMBER')}</td>
-          <td><button type="button" onClick={JoinMissionBtn} id={mission.mission_id} className="btn btn-light">{(mission.mission_button ? 'Join Mission' : 'Leave Mission')}</button></td>
+          <td><button type="button" onClick={JoinMissionBtn} id={mission.mission_id} className="btn btn-light">{(mission.mission_button ? 'Leave Mission' : 'Join Mission')}</button></td>
         </tr>
       ))}
     </tbody>

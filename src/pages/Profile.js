@@ -1,8 +1,9 @@
 import React from 'react';
+import ProfileMissions from '../components/profilemissions';
 
 const Profile = () => (
   <div>
-    <p> Profile </p>
+    <ProfileMissions />
   </div>
 );
 
