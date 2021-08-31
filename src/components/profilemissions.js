@@ -2,9 +2,8 @@ import React from 'react';
 import { useSelector } from 'react-redux';
 
 const ProfileMissions = () => {
-
   const myState = useSelector((state) => state.missions);
-  const myMissions = myState.filter((mission) => mission.member === true); 
+  const myMissions = myState.filter((mission) => mission.member === true);
 
   const MissionDisplay = () => (
     <tbody>

@@ -4,15 +4,15 @@ import { successMission, joinMission } from '../redux/missions/missions';
 
 const Missions = () => {
   const dispatch = useDispatch();
-  
+
   useEffect(() => {
-      const fetchMissions = async () => {
-        const url = 'https://api.spacexdata.com/v3/missions';
-        const missionsFecth = await fetch(url);
-        const missionsData = await missionsFecth.json();
-        return dispatch(successMission(missionsData));
-      };
-      fetchMissions();
+    const fetchMissions = async () => {
+      const url = 'https://api.spacexdata.com/v3/missions';
+      const missionsFecth = await fetch(url);
+      const missionsData = await missionsFecth.json();
+      return dispatch(successMission(missionsData));
+    };
+    fetchMissions();
   }, []);
 
   const myMissions = useSelector((state) => state.missions);

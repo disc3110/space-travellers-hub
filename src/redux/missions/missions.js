@@ -13,7 +13,6 @@ export const joinMission = (payload) => ({
   payload,
 });
 
-
 const reducer = (state = initialState, action) => {
   switch (action.type) {
     case SUCCESS_MISSION: {
