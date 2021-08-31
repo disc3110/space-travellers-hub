@@ -1,4 +1,3 @@
-/* disable-eslint */
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { successMission } from '../redux/missions/missions';
