@@ -16,7 +16,7 @@ const ProfileMissions = () => {
   );
 
   return (
-    <div className="p-5">
+    <div>
         <h1>My Missions</h1>
       <table className="table table-hover border border-solid">
         <MissionDisplay />
