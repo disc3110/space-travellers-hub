@@ -3,10 +3,11 @@ import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
 import './style/index.css';
 import { Route, BrowserRouter, Switch } from 'react-router-dom';
+import { Provider } from 'react-redux';
 import Header from './components/header';
 import Misssions from './pages/Missions';
 import Profile from './pages/Profile';
-import Rockets from './pages/Rockets';
+import RocketsPage from './pages/RocketsPage';
 import store from './redux/configureStore';
 
 ReactDOM.render(
@@ -22,7 +23,7 @@ ReactDOM.render(
             <Profile />
           </Route>
           <Route exact path="/">
-            <Rockets />
+            <RocketsPage />
           </Route>
         </Switch>
       </BrowserRouter>
