@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { successMission } from '../redux/missions/missions';
+import { successMission, joinMission } from '../redux/missions/missions';
 
 const Missions = () => {
   const dispatch = useDispatch();
@@ -16,14 +16,18 @@ const Missions = () => {
 
   const myMissions = useSelector((state) => state.missions);
 
+  const JoinMissionBtn = (e) => {
+    dispatch(joinMission(e.target));
+  };
+
   const MissionDisplay = () => (
     <tbody>
       {myMissions.map((mission) => (
         <tr key={mission.mission_id}>
           <th scope="row">{mission.mission_name}</th>
           <td>{mission.description}</td>
-          <td>Member</td>
-          <td><button type="button" className="btn btn-light">Join</button></td>
+          <td>{(mission.member ? 'Actve Member' : 'NOT A MEMBER')}</td>
+          <td><button type="button" onClick={JoinMissionBtn} id={mission.mission_id} className="btn btn-light">{(mission.mission_button ? 'Join Mission' : 'Leave Mission')}</button></td>
         </tr>
       ))}
     </tbody>
