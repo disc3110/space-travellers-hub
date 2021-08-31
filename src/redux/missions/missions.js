@@ -21,14 +21,14 @@ const reducer = (state = initialState, action) => {
         mission_name: element.mission_name,
         description: element.description,
         member: false,
-        mission_button: 'Join Mission',
+        mission_button: true,
       }));
     }
     case JOIN_MISSION: {
       const newState = state.map(mission => {
         if(mission.mission_id !== action.payload.id)
             return mission;
-        return { ...mission, member: true };
+        return { ...mission, member: !mission.member, mission_button: !mission.mission_button};
     });
     return newState;
     }
