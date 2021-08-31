@@ -28,7 +28,7 @@ const Missions = () => {
           <th scope="row">{mission.mission_name}</th>
           <td>{mission.description}</td>
           <td>{(mission.member ? 'Actve Member' : 'NOT A MEMBER')}</td>
-          <td><button type="button" onClick={JoinMissionBtn} id={mission.mission_id} className="btn btn-light">{(mission.mission_button ? 'Leave Mission' : 'Join Mission')}</button></td>
+          <td><button type="btn-primary" onClick={JoinMissionBtn} id={mission.mission_id} className="btn btn-primary">{(mission.mission_button ? 'Leave Mission' : 'Join Mission')}</button></td>
         </tr>
       ))}
     </tbody>
