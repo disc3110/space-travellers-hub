@@ -1461,7 +1461,7 @@
     "schema-utils" "^2.6.5"
     "source-map" "^0.7.3"
 
-"@reduxjs/toolkit@^1.5.1":
+"@reduxjs/toolkit@^1.6.1":
   "integrity" "sha512-pa3nqclCJaZPAyBhruQtiRwtTjottRrVJqziVZcWzI73i6L3miLTtUyWfauwv08HWtiXLx1xGyGt+yLFfW/d0A=="
   "resolved" "https://registry.npmjs.org/@reduxjs/toolkit/-/toolkit-1.6.1.tgz"
   "version" "1.6.1"
@@ -8682,6 +8682,11 @@
   dependencies:
     "node-modules-regexp" "^1.0.0"
 
+"pjs@*":
+  "integrity" "sha512-aoPrjtnYOknat/wiO5hyCkub7LymxSY1BN8gIsW49PfbdPyQiaU+UOo9DfSEhhl48cWLd28IwpERutBveLdQLA=="
+  "resolved" "https://registry.npmjs.org/pjs/-/pjs-5.1.2.tgz"
+  "version" "5.1.2"
+
 "pkg-dir@^2.0.0":
   "integrity" "sha1-9tXREJ4Z1j7fQo4L1X4Sd3YVM0s="
   "resolved" "https://registry.npmjs.org/pkg-dir/-/pkg-dir-2.0.0.tgz"
@@ -10177,7 +10182,7 @@
   "resolved" "https://registry.npmjs.org/redux-thunk/-/redux-thunk-2.3.0.tgz"
   "version" "2.3.0"
 
-"redux@^4.0.0", "redux@^4.1.0":
+"redux@^4.0.0", "redux@^4.1.0", "redux@^4.1.1":
   "integrity" "sha512-hZQZdDEM25UY2P493kPYuKqviVwZ58lEmGQNeQ+gXa+U0gYPUBf7NKYazbe3m+bs/DzM/ahN12DbF+NG8i0CWw=="
   "resolved" "https://registry.npmjs.org/redux/-/redux-4.1.1.tgz"
   "version" "4.1.1"
@@ -11672,6 +11677,13 @@
   dependencies:
     "readable-stream" "~2.3.6"
     "xtend" "~4.0.1"
+
+"thunk@^0.0.1":
+  "integrity" "sha1-ZXWwC6Nv9MbF7fhPkjISI5oKfDc="
+  "resolved" "https://registry.npmjs.org/thunk/-/thunk-0.0.1.tgz"
+  "version" "0.0.1"
+  dependencies:
+    "pjs" "*"
 
 "thunky@^1.0.2":
   "integrity" "sha512-eHY7nBftgThBqOyHGVN+l8gF0BucP09fMo0oO/Lb0w1OF80dJv+lDVpXG60WMQvkcxAkNybKsrEIE3ZtKGmPrA=="
