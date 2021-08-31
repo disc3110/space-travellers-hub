@@ -14,9 +14,11 @@ const Rockets = () => {
   const renderRockets = (rocketCollection) => rocketCollection.map((rocketInfo) => (
     <Rocket
       key={rocketInfo.id}
+      id={rocketInfo.id}
       name={rocketInfo.name}
       image={rocketInfo.images[0]}
       description={rocketInfo.description}
+      reserved={rocketInfo.reserved}
     />
   ));
 
