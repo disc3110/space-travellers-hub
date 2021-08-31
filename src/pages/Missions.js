@@ -26,7 +26,7 @@ const Missions = () => {
         <tr key={mission.mission_id}>
           <th scope="row">{mission.mission_name}</th>
           <td>{mission.description}</td>
-          <td>STATUS</td>
+          <td>{(mission.member ? 'Actve Member' : 'NOT A MEMBER')}</td>
           <td><button type="button" onClick={JoinMissionBtn} id={mission.mission_id} className="btn btn-light">{mission.mission_button}</button></td>
         </tr>
       ))}
