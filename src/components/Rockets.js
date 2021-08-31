@@ -8,15 +8,19 @@ const Rockets = () => {
   const rockets = useSelector((state) => state.rockets.entities);
 
   useEffect(() => {
-    dispatch(fetchRockets());
+    if (rockets.length === 0) {
+      dispatch(fetchRockets());
+    }
   }, []);
 
   const renderRockets = (rocketCollection) => rocketCollection.map((rocketInfo) => (
     <Rocket
       key={rocketInfo.id}
+      id={rocketInfo.id}
       name={rocketInfo.name}
       image={rocketInfo.images[0]}
       description={rocketInfo.description}
+      reserved={rocketInfo.reserved}
     />
   ));
 
