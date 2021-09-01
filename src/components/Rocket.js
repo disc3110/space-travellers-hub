@@ -1,7 +1,6 @@
-/* eslint-disable no-unused-vars */
 import PropTypes from 'prop-types';
 import { useDispatch } from 'react-redux';
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import { reserve } from '../redux/rockets/rockesSlice';
 
 const Rocket = (props) => {

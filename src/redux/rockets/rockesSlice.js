@@ -1,4 +1,3 @@
-/* eslint-disable no-param-reassign */
 import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
 import axios from 'axios';
 
@@ -30,11 +29,13 @@ export const rocketsSlice = createSlice({
   extraReducers: (builder) => {
     builder
       .addCase(fetchRockets.pending, (state) => {
-        state.loading = 'pending';
+        const newState = state;
+        newState.loading = 'pending';
       })
       .addCase(fetchRockets.fulfilled, (state, action) => {
-        state.entities = [...action.payload];
-        state.loading = 'idle';
+        const newState = state;
+        newState.entities = [...action.payload];
+        newState.loading = 'idle';
       });
   },
 });

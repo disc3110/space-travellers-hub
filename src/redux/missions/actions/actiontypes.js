@@ -1,0 +1,2 @@
+export const SUCCESS_MISSION = 'SUCCESS_MISSION';
+export const JOIN_MISSION = 'JOIN_MISSION';

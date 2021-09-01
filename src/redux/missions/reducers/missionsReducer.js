@@ -1,17 +1,6 @@
-const SUCCESS_MISSION = 'SUCCESS_MISSION';
-const JOIN_MISSION = 'JOIN_MISSION';
+import { SUCCESS_MISSION, JOIN_MISSION } from '../actions/actiontypes';
 
 const initialState = [];
-
-export const successMission = (payload) => ({
-  type: SUCCESS_MISSION,
-  payload,
-});
-
-export const joinMission = (payload) => ({
-  type: JOIN_MISSION,
-  payload,
-});
 
 const reducer = (state = initialState, action) => {
   switch (action.type) {
