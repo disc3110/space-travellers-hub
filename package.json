@@ -5,7 +5,6 @@
   "homepage": "https://disc3110.github.io/space-travellers-hub/",
   "dependencies": {
     "@reduxjs/toolkit": "^1.6.1",
-    "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
     "axios": "^0.21.1",
@@ -49,6 +48,7 @@
     "@babel/eslint-parser": "^7.15.0",
     "@babel/plugin-syntax-jsx": "^7.14.5",
     "@babel/preset-react": "^7.14.5",
+    "@testing-library/jest-dom": "^4.2.4",
     "eslint": "^7.32.0",
     "eslint-config-airbnb": "^18.2.1",
     "eslint-plugin-import": "^2.24.2",
