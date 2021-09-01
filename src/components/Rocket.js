@@ -21,8 +21,8 @@ const Rocket = (props) => {
   };
 
   return (
-    <div className="d-flex my-2">
-      <img src={image} alt={name} className="w-25" />
+    <div className="d-flex my-4">
+      <img src={image} alt={name} className="w-25 p-1" />
       <div className="w-75 p-2">
         <h2>{name}</h2>
         <p>{description}</p>
