@@ -4,7 +4,12 @@ const RocketProfile = () => {
   const rockets = useSelector((state) => state.rockets.entities);
   const reservedRockets = rockets.filter((rocket) => rocket.reserved === 'true');
   const renderReservedRockets = () => reservedRockets.map((rocket) => (
-    <tr key={rocket.id}><th>🚀 &nbsp;{rocket.name}</th></tr>
+    <tr key={rocket.id}>
+      <th>
+        🚀 &nbsp;
+        {rocket.name}
+      </th>
+    </tr>
   ));
   return (
     <div>

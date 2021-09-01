@@ -9,7 +9,10 @@ const ProfileMissions = () => {
     <tbody>
       {myMissions.map((mission) => (
         <tr key={mission.mission_id}>
-          <th>🌎 &nbsp;{mission.mission_name}</th>
+          <th>
+            🌎 &nbsp;
+            {mission.mission_name}
+          </th>
         </tr>
       ))}
     </tbody>
@@ -17,7 +20,7 @@ const ProfileMissions = () => {
 
   return (
     <div>
-        <h1>My Missions</h1>
+      <h1>My Missions</h1>
       <table className="table table-hover border border-solid">
         <MissionDisplay />
       </table>

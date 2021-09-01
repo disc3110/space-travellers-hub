@@ -27,8 +27,8 @@ const Missions = () => {
         <tr key={mission.mission_id}>
           <th scope="row">{mission.mission_name}</th>
           <td>{mission.description}</td>
-          <td>{(mission.member ? 'Actve Member' : 'NOT A MEMBER')}</td>
-          <td><button type="btn-primary" onClick={JoinMissionBtn} id={mission.mission_id} className="btn btn-primary">{(mission.mission_button ? 'Leave Mission' : 'Join Mission')}</button></td>
+          <td className="text-center"><p className={(mission.member ? 'text-white bg-success' : 'text-white bg-secondary')}>{(mission.member ? 'Actve Member' : 'NOT A MEMBER')}</p></td>
+          <td><button type="button" onClick={JoinMissionBtn} id={mission.mission_id} className={(mission.mission_button ? 'btn btn-outline-danger text-nowrap' : 'btn btn-outline-secondary text-nowrap')}>{(mission.mission_button ? 'Leave Mission' : 'Join Mission')}</button></td>
         </tr>
       ))}
     </tbody>
@@ -41,8 +41,8 @@ const Missions = () => {
           <tr>
             <th scope="col">Mission</th>
             <th scope="col">Description</th>
-            <th scope="col">Status</th>
-            <th scope="col"> </th>
+            <th scope="col" className="px-5">Status</th>
+            <th scope="col" className="px-5"> </th>
           </tr>
         </thead>
         <MissionDisplay />
