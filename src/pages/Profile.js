@@ -4,9 +4,14 @@ import RocketProfile from '../components/RocketsProfile';
 
 const Profile = () => (
   <div>
-    <p> Profile </p>
-    <RocketProfile />
-    <ProfileMissions />
+    <div className="row align-top p-5">
+      <div className="col">
+        <ProfileMissions />
+      </div>
+      <div className="col">
+        <RocketProfile />
+      </div>
+    </div>
   </div>
 );
 
