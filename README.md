@@ -1,7 +1,7 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
 # Space travellers
-> This page lets you resreve rockets and join missions from spaceX
+> This page lets you reserve rockets and join missions from spaceX.
 
 # Live demo
 You can see my page live [here](https://disc3110.github.io/space-travellers-hub)
@@ -12,6 +12,7 @@ You can see my page live [here](https://disc3110.github.io/space-travellers-hub)
 ## Built With
 - React
 - Redux
+- Bootstrap
 - css3
 
 ## Getting Started
@@ -22,7 +23,20 @@ To get a local copy follow the following steps !
 - Install the packages with npm `npm install`
 - use `npm run start` to build dist files and run local server
 
+### Testing
 
+1. Run the tests
+   ```sh
+   npm test
+   ```
+   or
+   ```sh
+   npm run watch
+   ```
+2. See report in browser 
+   ```sh
+   open ./coverage/lcov-report/index.html
+   ```
 ## Authors
 
 👤 *Diego Solis*
