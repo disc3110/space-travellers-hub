@@ -2,6 +2,7 @@
   "name": "space-travellers-hub",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://disc3110.github.io/space-travellers-hub/",
   "dependencies": {
     "@reduxjs/toolkit": "^1.6.1",
     "@testing-library/react": "^9.3.2",
